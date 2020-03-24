@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The best books: Mystery</title>
+    <meta name="author" content="Leia Johst" >
+    <meta name="description" content="Book review website, Mystery Books" >
+    <link rel="shortcut icon" href="Images/Mystery.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            background-image: url("Images/Question.png");
+            font-family: 'Architects Daughter', cursive;
+        }
+        p.review {
+            border: 3px solid black;
+            padding: 10px;
+        }
+        b.title {
+            font-size: 55px;
+        }
+        i.subtitle {
+            font-size: xx-large;
+        }
+        a.red:hover {
+            color: red;
+        }
+        .Image1 {
+            grid-area: image1;
+            margin-top: 10px;
+        }
+        .Image2 {
+            grid-area: image2;
+            margin-top: 10px;
+        }
+        .Image3 {
+            grid-area: image3;
+        }
+        .Image4 {
+            grid-area: image4;
+        }
+        .header {
+            grid-area: header;
+            padding: 5px;
+            text-align: center;
+            background: linear-gradient(0deg, rgba(70,70,70,0.9476832969515931) 0%, rgba(255,255,255,1) 100%);
+            border-bottom: 2.5px solid black;
+            border-top: 3px solid black;
+            width: 890px;
+            margin: auto;
+        }
+        .Review1 {
+            grid-area: review1;
+            margin-left: 20px;
+            text-align: left;
+        }
+        .Review2 {
+            grid-area: review2;
+            margin-right: 20px;
+            text-align: left;
+        }
+        .Review3 {
+            grid-area: review3;
+            margin-left: 20px;
+            text-align: left;
+        }
+        .Review4 {
+            grid-area: review4;
+            margin-right: 20px;
+            text-align: left;
+        }
+        .nav {
+            grid-area: nav;
+            border-bottom: black solid 3px;
+            text-align: center;
+            background: linear-gradient(0deg, rgba(70,70,70,0.2) 0%, rgba(255,255,255,0.2) 100%);
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 1Fr 1Fr 1Fr;
+            grid-template-rows: 50px;
+            grid-template-areas: "nav1 nav2 nav3";
+        }
+        .nav1 {
+            grid-area: nav1;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .nav2 {
+            grid-area: nav2;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .nav3 {
+            grid-area: nav3;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .footer1 {
+            grid-area: footer1;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(70,70,70,0.9476832969515931) 0%, rgba(255,255,255,1) 100%);
+        }
+        .footer2 {
+            grid-area: footer2;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(70,70,70,0.9476832969515931) 0%, rgba(255,255,255,1) 100%);
+        }
+        .footer3 {
+            grid-area: footer3;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(70,70,70,0.9476832969515931) 0%, rgba(255,255,255,1) 100%);
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .Content {
+            display: grid;
+            grid-template-columns: 3Fr 1Fr 3Fr;
+            grid-template-rows: 150px 50px 1Fr 1.5Fr 1Fr 1.5Fr 50px;
+            grid-template-areas: "header header header"
+                                 "nav nav nav"
+                                 "image1 . image2"
+                                 "review1 . review2"
+                                 "image3 . image4"
+                                 "review3 . review4"
+                                 "footer1 footer2 footer3";
+            background: #ffffff;
+            margin: auto;
+            width: 900px;
+            border-left: solid black 3px;
+            border-right: solid black 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Content" >
+        <div class="header" >
+            <h1>
+                <b class="title">Mystery Books</b> <br/>
+                <i class="subtitle">The best books and reviews</i>
+            </h1>
+        </div>
+        <div class="nav">
+            <div class="nav1" >
+                <a href="Romance.html">Romance</a>
+            </div>
+            <div class="nav2" >
+                <a href="Fantasy.html">Fantasy</a>
+            </div>
+            <div class="nav3" >
+                <a href="Science%20Fiction.html">Science Fiction</a>
+            </div>
+        </div>
+        <div class="Image1" >
+            <br/>
+            <img src="Images/Rivers_of_London.jpg"
+                 alt="Book cover of The Rivers of London"
+                 height="400" >
+        </div>
+        <div class="Image2" >
+            <br/>
+            <img src="Images/Murder_on_the_Orient_Express.jpg"
+                 alt="Book cover of Murder on the Orient Express"
+                 height="400" >
+        </div>
+        <div class="Image3" >
+            <img src="Images/in%20cold%20blood.jpg"
+                 alt="Book cover of In cold blood"
+                 height="400" >
+        </div>
+        <div class="Image4" >
+            <img src="Images/Girl%20on%20the%20train.jpg"
+                 alt="Book cover of The Girl on the Train"
+                 height="400" >
+        </div>
+        <div class="Review1" >
+            <p class="review">
+                Probationary Constable Peter Grant dreams of being a detective in London’s Metropolitan Police. Too bad his superior plans to assign him to the Case Progression Unit, where the biggest threat he’ll face is a paper cut. <br/>
+                But Peter’s prospects change in the aftermath of a puzzling murder, when he gains exclusive information from an eyewitness who happens to be a ghost. <br/>
+                Peter’s ability to speak with the lingering dead brings him to the attention of Detective Chief Inspector Thomas Nightingale, who investigates crimes involving magic and other manifestations of the uncanny. <br/>
+                Now, as a wave of brutal and bizarre murders engulfs the city, Peter is plunged into a world where gods and goddesses mingle with mortals and a long-dead evil is making a comeback on a rising tide of magic. <br/>
+                <br/>
+                <b>You have to read this book, whether you like good writing, good fantasy or urban fantasy, good characters, or simply a breath-taking story set in a breath-taking world, this book is for you. <br/>
+                    Because it is all of those things, and much much more. Aaronovitch has written a book that will surely become a favourite on many shelves the moment they’ve finished it at 3 in the morning.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Rivers-London-Ben-Aaronovitch/dp/0575097582/ref=sr_1_1?crid=2LNW62NFABO7K&keywords=the+rivers+of+london&qid=1580916872&sprefix=the+rivers%2Caps%2C170&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review2" >
+            <p class="review">
+                Just after midnight, a snowdrift stops the Orient Express in its tracks. The luxurious train is surprisingly full for the time of the year, but by the morning it is one passenger fewer. <br/>
+                An American tycoon lies dead in his compartment, stabbed a dozen times, his door locked from the inside.<br/>
+                Isolated and with a killer in their midst, detective Hercule Poirot must identify the murderer – in case he or she decides to strike again.<br/>
+                <br/>
+                "The impossible could not have happened, therefore the impossible must be possible in spite of appearances."<br/>
+                <br/>
+                Agatha Christie, Murder on the Orient Express<br/>
+                <br/>
+                <b><i>Murder on the Orient Express</i> is undoubtedly one of Agatha Christie's greatest mystery novels.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Murder-Orient-Express-Hercule-Mystery/dp/0062073508/ref=sr_1_1?crid=6SHCJ8O2ETFW&keywords=murder+on+the+orient+express&qid=1580916901&sprefix=murder%2Caps%2C170&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review3" >
+            <p class="review">
+                On November 15, 1959, in the small town of Holcomb, Kansas, four members of the Clutter family were savagely murdered by blasts from a shotgun held a few inches from their faces. <br/>
+                There was no apparent motive for the crime, and there were almost no clues.<br/>
+                <br/>
+                <b>As Truman Capote reconstructs the murder and the investigation that led to the capture, trial, and execution of the killers, he generates both mesmerizing suspense and astonishing empathy. <br/>
+                At the center of his study are the amoral young killers Perry Smith and Dick Hickcock, who, vividly drawn by Capote, are shown to be reprehensible yet entirely and frighteningly human. <br/>
+                    <i>In Cold Blood</i> is a seminal work of modern prose, a remarkable synthesis of journalistic skill and powerfully evocative narrative.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Cold-Blood-Truman-Capote/dp/0679745580/ref=sr_1_1?crid=2FJIKRMA1W5I4&keywords=in+cold+blood&qid=1580916926&sprefix=in+cold+blood%2Caps%2C157&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review4" >
+            <p class="review">
+                Rachel catches the same commuter train every morning. She knows it will wait at the same signal each time, overlooking a row of back gardens. <br/>
+                She’s even started to feel like she knows the people who live in one of the houses. “Jess and Jason,” she calls them. Their life—as she sees it—is perfect.<br/>
+                If only Rachel could be that happy. And then she sees something shocking. It’s only a minute until the train moves on, but it’s enough.<br/>
+                Now everything’s changed. Now Rachel has a chance to become a part of the lives she’s only watched from afar.<br/>
+                Now they’ll see; she’s much more than just the girl on the train...<br/>
+                <br/>
+                <b><i>"The Girl on the Train"</i> has more fun with unreliable narration than any chiller since <i>“Gone Girl,”</i> the book still entrenched on best-seller lists two and a half years after publication because nothing better has come along. <br/>
+                    <i>“The Girl on the Train”</i> has <i>“Gone Girl”</i>-type fun with unreliable spouses, too. Its author, Paula Hawkins, isn’t as clever or swift as Gillian Flynn, the author of <i>“Gone Girl,”</i> but she’s no slouch when it comes to trickery or malice. <br/>
+                    So <i>“The Girl on the Train”</i> is liable to draw a large, bedazzled readership too.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Girl-Train-Paula-Hawkins/dp/038568231X/ref=sr_1_1?crid=2DKB7D852449H&keywords=the+girl+on+the+train&qid=1580916950&sprefix=the+girl+%2Caps%2C167&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="footer1" >
+            <p>
+                <a href="index.html"> Back to Main page </a>
+            </p>
+        </div>
+        <div class="footer2" >
+
+        </div>
+        <div class="footer3" >
+            <p>
+                <a href="aboutproject.html"> About my project </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

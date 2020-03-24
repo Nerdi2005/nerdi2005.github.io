@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The best books: Fantasy</title>
+    <meta name="author" content="Leia Johst" >
+    <meta name="description" content="Book review website, Fantasy Books" >
+    <link rel="shortcut icon" href="Images/Fantasy4.jpeg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            background-image: url("Images/Unicorn2.jpg");
+            font-family: 'Architects Daughter', cursive;
+        }
+        p.review {
+            border: 3px solid black;
+            padding: 10px;
+        }
+        b.title {
+            font-size: 55px;
+        }
+        i.subtitle {
+            font-size: xx-large;
+        }
+        a.red:hover {
+            color: red;
+        }
+        .Image1 {
+            grid-area: image1;
+            margin-top: 10px;
+        }
+        .Image2 {
+            grid-area: image2;
+            margin-top: 10px;
+        }
+        .Image3 {
+            grid-area: image3;
+        }
+        .Image4 {
+            grid-area: image4;
+        }
+        .header {
+            grid-area: header;
+            padding: 5px;
+            text-align: center;
+            background: linear-gradient(0deg, rgba(207,157,255,1) 0%, rgba(148,139,255,1) 23%, rgba(147,244,255,1) 38%, rgba(145,255,157,1) 53%, rgba(251,255,151,1) 68%, rgba(255,212,152,1) 83%, rgba(255,147,147,1) 100%);
+            border-bottom: 2.5px solid black;
+            border-top: 3px solid black;
+            width: 890px;
+            margin: auto;
+        }
+        .Review1 {
+            grid-area: review1;
+            margin-left: 20px;
+            text-align: left;
+        }
+        .Review2 {
+            grid-area: review2;
+            margin-right: 20px;
+            text-align: left;
+        }
+        .Review3 {
+            grid-area: review3;
+            margin-left: 20px;
+            text-align: left;
+        }
+        .Review4 {
+            grid-area: review4;
+            margin-right: 20px;
+            text-align: left;
+        }
+        .nav {
+            grid-area: nav;
+            border-bottom: black solid 3px;
+            text-align: center;
+            background: linear-gradient(0deg, rgba(207,157,255,0.2) 0%, rgba(148,139,255,0.2) 23%, rgba(147,244,255,0.2) 38%, rgba(145,255,157,0.2) 53%, rgba(251,255,151,0.2) 68%, rgba(255,212,152,0.2) 83%, rgba(255,147,147,0.2) 100%);
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 1Fr 1Fr 1Fr;
+            grid-template-rows: 50px;
+            grid-template-areas: "nav1 nav2 nav3";
+        }
+        .nav1 {
+            grid-area: nav1;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .nav2 {
+            grid-area: nav2;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .nav3 {
+            grid-area: nav3;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .footer1 {
+            grid-area: footer1;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(207,157,255,1) 0%, rgba(148,139,255,1) 23%, rgba(147,244,255,1) 38%, rgba(145,255,157,1) 53%, rgba(251,255,151,1) 68%, rgba(255,212,152,1) 83%, rgba(255,147,147,1) 100%);
+        }
+        .footer2 {
+            grid-area: footer2;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(207,157,255,1) 0%, rgba(148,139,255,1) 23%, rgba(147,244,255,1) 38%, rgba(145,255,157,1) 53%, rgba(251,255,151,1) 68%, rgba(255,212,152,1) 83%, rgba(255,147,147,1) 100%);
+        }
+        .footer3 {
+            grid-area: footer3;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(207,157,255,1) 0%, rgba(148,139,255,1) 23%, rgba(147,244,255,1) 38%, rgba(145,255,157,1) 53%, rgba(251,255,151,1) 68%, rgba(255,212,152,1) 83%, rgba(255,147,147,1) 100%);
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .Content {
+            display: grid;
+            grid-template-columns: 3Fr 1Fr 3Fr;
+            grid-template-rows: 150px 50px 1Fr 2Fr 1Fr 2Fr 50px;
+            grid-template-areas: "header header header"
+                                 "nav nav nav"
+                                 "image1 . image2"
+                                 "review1 . review2"
+                                 "image3 . image4"
+                                 "review3 . review4"
+                                 "footer1 footer2 footer3";
+            background: #ffffff;
+            margin: auto;
+            width: 900px;
+            border-left: solid black 3px;
+            border-right: solid black 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Content" >
+        <div class="header" >
+            <h1>
+                <b class="title">Fantasy Books</b> <br/>
+                <i class="subtitle">The best books and reviews</i>
+            </h1>
+        </div>
+        <div class="nav">
+            <div class="nav1" >
+                <a href="Mystery.html">Mystery</a>
+            </div>
+            <div class="nav2" >
+                <a href="Romance.html">Romance</a>
+            </div>
+            <div class="nav3" >
+                <a href="Science%20Fiction.html">Science Fiction</a>
+            </div>
+        </div>
+        <div class="Image1" >
+            <br/>
+            <img src="Images/harry-potter.jpg"
+                 alt="Book cover of Harry Potter and the sorcerer's stone"
+                 height="400" >
+        </div>
+        <div class="Image2" >
+            <br/>
+            <img src="Images/Mort.jpg"
+                 alt="Book cover of Mort"
+                 height="400" >
+        </div>
+        <div class="Image3" >
+            <img src="Images/The%20last%20unicorn.jpg"
+                 alt="Book cover of The last unicorn"
+                 height="400" >
+        </div>
+        <div class="Image4" >
+            <img src="Images/The%20fellowship%20of%20the%20ring2.jpg"
+                 alt="Book cover of The lord of the rings: The fellowship of the ring"
+                 height="400" >
+        </div>
+        <div class="Review1" >
+            <p class="review">
+                Harry Potter's life is miserable. His parents are dead and he's stuck with his heartless relatives, who force him to live in a tiny closet under the stairs. <br/>
+                But his fortune changes when he receives a letter that tells him the truth about himself: he's a wizard. A mysterious visitor rescues him from his relatives and takes him to his new home, Hogwarts School of Witchcraft and Wizardry.<br/>
+
+                After a lifetime of bottling up his magical powers, Harry finally feels like a normal kid. But even within the Wizarding community, he is special. <br/>
+                He is the boy who lived: the only person to have ever survived a killing curse inflicted by the evil Lord Voldemort, who launched a brutal takeover of the Wizarding world, only to vanish after failing to kill Harry.<br/>
+
+                Though Harry's first year at Hogwarts is the best of his life, not everything is perfect. There is a dangerous secret object hidden within the castle walls, and Harry believes it's his responsibility to prevent it from falling into evil hands. <br/>
+                But doing so will bring him into contact with forces more terrifying than he ever could have imagined.<br/>
+                <br/>
+                <b>Full of sympathetic characters, wildly imaginative situations, and countless exciting details, the first installment in the series assembles an unforgettable magical world and sets the stage for many high-stakes adventures to come.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Harry-Potter-Philosophers-Stone-Rowling/dp/1408855658/ref=sr_1_1?crid=2HES9WVLG5PDZ&keywords=harry+potter+and+the+philosopher%27s+stone&qid=1580916972&sprefix=harry+potter+%2Caps%2C172&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review2" >
+            <p class="review">
+                <b>Terry Pratchett's profoundly irreverent novels are consistent number one bestseller in England, where they have catapulted him into the highest echelons of parody next to Mark Twain, Kurt Vonnegut, Douglas Adams, and Carl Hiaasen.</b><br/>
+                <br/>
+                In this Discworld installment, Death comes to Mort with an offer he can't refuse -- especially since being, well, dead isn't compulsory. <br/>
+                As Death's apprentice, he'll have free board and lodging, use of the company horse, and he won't need time off for family funerals. <br/>
+                The position is everything Mort thought he'd ever wanted, until he discovers that this perfect job can be a killer on his love life.<br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Mort-Terry-Pratchett/dp/0552131067/ref=sr_1_1?crid=2ZWNLN47XFL6M&keywords=mort+terry+pratchett&qid=1580916999&sprefix=mort+%2Caps%2C173&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review3" >
+            <p class="review">
+                She was magical, beautiful beyond belief—and completely alone...<br/>
+                <br/>
+                The unicorn had lived since before memory in a forest where death could touch nothing. Maidens who caught a glimpse of her glory were blessed by enchantment they would never forget. <br/>
+                But outside her wondrous realm, dark whispers and rumours carried a message she could not ignore: "Unicorns are gone from the world."<br/>
+                <br/>
+                Aided by a bumbling magician and an indomitable spinster, she set out to learn the truth. <br/>
+                But she feared even her immortal wisdom meant nothing in a world where a mad king's curse and terror incarnate lived only to stalk the last unicorn to her doom...<br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Last-Unicorn-Peter-S-Beagle/dp/0451450523/ref=sr_1_1?crid=NOHVUYLOTC8Y&keywords=the+last+unicorn&qid=1580917021&sprefix=the+last+un%2Caps%2C167&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review4" >
+            <p class="review">
+                One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them<br/>
+                <br/>
+                In ancient times the Rings of Power were crafted by the Elven-smiths, and Sauron, The Dark Lord, forged the One Ring, filling it with his own power so that he could rule all others. <br/>
+                But the One Ring was taken from him, and though he sought it throughout Middle-earth, it remained lost to him. After many ages it fell into the hands of Bilbo Baggins, as told in The Hobbit.<br/>
+
+                In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. <br/>
+                Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose.<br/>
+                <br/>
+                <b>The first book of the trilogy by J.R.R. Tolkien, <i>The Fellowship of the Ring</i>, is a door through which you take a step into another world. <br/>
+                A world of a time either so long back or so long forward; characters who are ageless, but not receding in attributes; and colorful sceneries which you visit. All are not one bit limiting.<br/>
+                The author of this book originally meant for the series to be one huge book, but the editors were wise enough to know that it wouldn’t be comfortable trying to fit some 1,500 pages in your hands. <br/>
+                    Before getting lost in <i>The Fellowship of the Ring</i>, I recommend reading <i>The Hobbit</i>. Reading <i>The Hobbit</i> just makes the serious stuff more sentimental and fluid. <br/>
+                    Regardless if <i>The Hobbit</i> is read or not, <i>The Fellowship of the Ring</i> is a timeless treasure.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Fellowship-Ring-Lord-Rings-Book/dp/0261102354/ref=sr_1_1?crid=SR56Q7XSN1NA&keywords=the+fellowship+of+the+ring&qid=1580917070&sprefix=the+fellow%2Caps%2C166&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="footer1" >
+            <p>
+                <a href="index.html"> Back to Main page </a>
+            </p>
+        </div>
+        <div class="footer2" >
+
+        </div>
+        <div class="footer3" >
+            <p>
+                <a href="aboutproject.html"> About my project </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The best books: Science Fiction</title>
+    <meta name="author" content="Leia Johst" >
+    <meta name="description" content="Book review website, Science Fiction Books" >
+    <link rel="shortcut icon" href="Images/SciFi2.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            background-image: url("Images/Planets.jpg");
+            font-family: 'Architects Daughter', cursive;
+        }
+        p.review {
+            border: 3px solid black;
+            padding: 10px;
+        }
+        b.title {
+            font-size: 55px;
+        }
+        i.subtitle {
+            font-size: xx-large;
+        }
+        a.red:hover {
+            color: red;
+        }
+        .Image1 {
+            grid-area: image1;
+            margin-top: 10px;
+        }
+        .Image2 {
+            grid-area: image2;
+            margin-top: 10px;
+        }
+        .Image3 {
+            grid-area: image3;
+        }
+        .Image4 {
+            grid-area: image4;
+        }
+        .header {
+            grid-area: header;
+            padding: 5px;
+            text-align: center;
+            background: linear-gradient(0deg, rgba(8,0,142,1) 0%, rgba(17,17,189,1) 30%, rgba(0,212,255,1) 100%);
+            border-bottom: 2.5px solid black;
+            border-top: 3px solid black;
+            width: 890px;
+            margin: auto;
+        }
+        .Review1 {
+            grid-area: review1;
+            margin-left: 20px;
+            text-align: left;
+        }
+        .Review2 {
+            grid-area: review2;
+            margin-right: 20px;
+            text-align: left;
+        }
+        .Review3 {
+            grid-area: review3;
+            margin-left: 20px;
+            text-align: left;
+        }
+        .Review4 {
+            grid-area: review4;
+            margin-right: 20px;
+            text-align: left;
+        }
+        .nav {
+            grid-area: nav;
+            border-bottom: black solid 3px;
+            text-align: center;
+            background: linear-gradient(0deg, rgba(8,0,142,0.2) 0%, rgba(17,17,189,0.2) 30%, rgba(0,212,255,0.2) 100%);
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 1Fr 1Fr 1Fr;
+            grid-template-rows: 50px;
+            grid-template-areas: "nav1 nav2 nav3";
+        }
+        .nav1 {
+            grid-area: nav1;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .nav2 {
+            grid-area: nav2;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .nav3 {
+            grid-area: nav3;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .footer1 {
+            grid-area: footer1;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(8,0,142,1) 0%, rgba(17,17,189,1) 30%, rgba(0,212,255,1) 100%);
+        }
+        .footer2 {
+            grid-area: footer2;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(8,0,142,1) 0%, rgba(17,17,189,1) 30%, rgba(0,212,255,1) 100%);
+        }
+        .footer3 {
+            grid-area: footer3;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(8,0,142,1) 0%, rgba(17,17,189,1) 30%, rgba(0,212,255,1) 100%);
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .Content {
+            display: grid;
+            grid-template-columns: 3Fr 1Fr 3Fr;
+            grid-template-rows: 150px 50px 1Fr 1.5Fr 1Fr 1.5Fr 50px;
+            grid-template-areas: "header header header"
+                                 "nav nav nav"
+                                 "image1 . image2"
+                                 "review1 . review2"
+                                 "image3 . image4"
+                                 "review3 . review4"
+                                 "footer1 footer2 footer3";
+            background: #ffffff;
+            margin: auto;
+            width: 900px;
+            border-left: solid black 3px;
+            border-right: solid black 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Content" >
+        <div class="header" >
+            <h1>
+                <b class="title">Science Fiction Books</b> <br/>
+                <i class="subtitle">The best books and reviews</i>
+            </h1>
+        </div>
+        <div class="nav">
+            <div class="nav1" >
+                <a href="Mystery.html">Mystery</a>
+            </div>
+            <div class="nav2" >
+                <a href="Fantasy.html">Fantasy</a>
+            </div>
+            <div class="nav3" >
+                <a href="Romance.html">Romance</a>
+            </div>
+        </div>
+        <div class="Image1" >
+            <br/>
+            <img src="Images/dune.jpg"
+                 alt="Book cover of Dune"
+                 height="400" >
+        </div>
+        <div class="Image2" >
+            <br/>
+            <img src="Images/hyperion4.jpg"
+                 alt="Book cover of Hyperion"
+                 height="400" >
+        </div>
+        <div class="Image3" >
+            <img src="Images/neuromancer3.jpg"
+                 alt="Book cover of Neuromancer"
+                 height="400" >
+        </div>
+        <div class="Image4" >
+            <img src="Images/space%20odyssey2.jpg"
+                 alt="Book cover of 2001: A space Odyssey"
+                 height="400" >
+        </div>
+        <div class="Review1" >
+            <p class="review">
+                Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world <br/>
+                where the only thing of value is the "spice" melange, a drug capable of extending life and enhancing consciousness. <br/>
+                Coveted across the known universe, melange is a prize worth killing for...<br/>
+
+                When House Atreides is betrayed, the destruction of Paul's family will set the boy on a journey toward a destiny greater than he could ever have imagined. <br/>
+                And as he evolves into the mysterious man known as Muad'Dib, he will bring to fruition humankind's most ancient and unattainable dream.<br/>
+                <br/>
+                <b>A stunning blend of adventure and mysticism, environmentalism and politics, <i>Dune</i> won the first Nebula Award, shared the Hugo Award, and formed the basis of what is undoubtedly the grandest epic in science fiction.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Dune-Frank-Herbert/dp/0441172717/ref=sr_1_1?crid=2KNZR2B3BHB6N&keywords=dune&qid=1580917088&sprefix=dune%2Caps%2C164&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review2" >
+            <p class="review">
+                On the world called Hyperion, beyond the law of the Hegemony of Man, there waits the creature called the Shrike. There are those who worship it. There are those who fear it. <br/>
+                And there are those who have vowed to destroy it. In the Valley of the Time Tombs, where huge, brooding structures move backward through time, the Shrike waits for them all. <br/>
+                On the eve of Armageddon, with the entire galaxy at war, seven pilgrims set forth on a final voyage to Hyperion seeking the answers to the unsolved riddles of their lives. <br/>
+                Each carries a desperate hope—and a terrible secret. And one may hold the fate of humanity in his hands.<br/>
+                <br/>
+                <b>A stunning tour de force filled with transcendent awe and wonder, <i>Hyperion</i> is a masterwork of science fiction that resonates with excitement and invention, the first volume in a remarkable new science fiction epic by the multiple-award-winning author of <i>The Hollow Man</i>.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Hyperion-Dan-Simmons/dp/0553283685/ref=sr_1_1?keywords=hyperion&qid=1580917108&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review3" >
+            <p class="review">
+                <b>Hotwired to the leading edges of art and technology, <i>Neuromancer</i> is a cyberpunk, science fiction masterpiece—a classic that ranks with 1984 and Brave New World as one of the twentieth century’s most potent visions of the future.</b><br/>
+                <br/>
+                The Matrix is a world within the world, a global consensus-hallucination, the representation of every byte of data in cyberspace...<br/>
+
+                Henry Dorsett Case was the sharpest data-thief in the business, until vengeful former employees crippled his nervous system. But now a new and very mysterious employer recruits him for a last-chance run.
+                The target: an unthinkably powerful artificial intelligence orbiting Earth in service of the sinister Tessier-Ashpool business clan. With a dead man riding shotgun and Molly, mirror-eyed street-samurai, to watch his back, Case embarks on an adventure that ups the ante on an entire genre of fiction.<br/>
+                <br/>
+                <b>The winner of the Hugo, Nebula, and Philip K. Dick Awards, <i>Neuromancer</i> was the first fully-realized glimpse of humankind’s digital future—a shocking vision that has challenged our assumptions about our technology and ourselves, reinvented the way we speak and think, and forever altered the landscape of our imaginations.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Neuromancer-William-Gibson/dp/0441569595/ref=sr_1_1?keywords=neuromancer&qid=1580917125&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review4" >
+            <p class="review">
+                On the Moon, an enigma is uncovered.<br/>
+
+                So great are the implications of this discovery that for the first time men are sent out deep into our solar system.<br/>
+
+                But long before their destination is reached, things begin to go horribly, inexplicably wrong...<br/>
+                <br/>
+                <b>One of the greatest-selling science fiction novels of our time, this classic book will grip you to the very end.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/2001-Odyssey-Arthur-C-Clarke/dp/0451457994/ref=sr_1_4?crid=1D1YMZWJBLXRK&keywords=2001+a+space+odyssey&qid=1580917151&replacementKeywords=a+space&sprefix=2001%2Caps%2C171&sr=8-4&vehicle=2001-59-756------------&vehicleName=2001+Honda+Odyssey" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="footer1" >
+            <p>
+                <a href="index.html"> Back to Main page </a>
+            </p>
+        </div>
+        <div class="footer2" >
+
+        </div>
+        <div class="footer3" >
+            <p>
+                <a href="aboutproject.html"> About my project </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

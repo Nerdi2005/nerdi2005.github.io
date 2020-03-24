@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The best books: Romance</title>
+    <meta name="author" content="Leia Johst" >
+    <meta name="description" content="Book review website, Romance Books" >
+    <link rel="shortcut icon" href="Images/Romance.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("Images/Roses.jpg");
+            font-family: 'Architects Daughter', cursive;
+        }
+        p.review {
+            border: 3px solid black;
+            padding: 10px;
+        }
+        b.title {
+            font-size: 55px;
+        }
+        i.subtitle {
+            font-size: xx-large;
+        }
+        a.red:hover {
+             color: red;
+         }
+        .Image1 {
+            grid-area: image1;
+            margin-top: 10px;
+        }
+        .Image2 {
+            grid-area: image2;
+            margin-top: 10px;
+        }
+        .Image3 {
+            grid-area: image3;
+        }
+        .Image4 {
+            grid-area: image4;
+        }
+        .header {
+            grid-area: header;
+            padding: 5px;
+            text-align: center;
+            background: linear-gradient(0deg, rgba(176,100,129,0.9476832969515931) 0%, rgba(255,220,237,1) 100%);
+            border-bottom: 2.5px solid black;
+            border-top: 3px solid black;
+            width: 890px;
+            margin: auto;
+        }
+        .Review1 {
+            grid-area: review1;
+            margin-left: 20px;
+        }
+        .Review2 {
+            grid-area: review2;
+            margin-right: 20px;
+        }
+        .Review3 {
+            grid-area: review3;
+            margin-left: 20px;
+        }
+        .Review4 {
+            grid-area: review4;
+            margin-right: 20px;
+        }
+        .nav {
+            grid-area: nav;
+            border-bottom: black solid 3px;
+            text-align: center;
+            background: linear-gradient(0deg, rgba(176,100,129,0.2) 0%, rgba(255,220,237,0.2) 100%);
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 1Fr 1Fr 1Fr;
+            grid-template-rows: 50px;
+            grid-template-areas: "nav1 nav2 nav3";
+        }
+        .nav1 {
+            grid-area: nav1;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .nav2 {
+            grid-area: nav2;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .nav3 {
+            grid-area: nav3;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .footer1 {
+            grid-area: footer1;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(176,100,129,0.9476832969515931) 0%, rgba(255,220,237,1) 100%);
+        }
+        .footer2 {
+            grid-area: footer2;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(176,100,129,0.9476832969515931) 0%, rgba(255,220,237,1) 100%);
+        }
+        .footer3 {
+            grid-area: footer3;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(0deg, rgba(176,100,129,0.9476832969515931) 0%, rgba(255,220,237,1) 100%);
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .Content {
+            display: grid;
+            grid-template-columns: 3Fr 1Fr 3Fr;
+            grid-template-rows: 150px 50px 1Fr 2Fr 1Fr 2Fr 50px;
+            grid-template-areas: "header header header"
+                                 "nav nav nav"
+                                 "image1 . image2"
+                                 "review1 . review2"
+                                 "image3 . image4"
+                                 "review3 . review4"
+                                 "footer1 footer2 footer3";
+            background: #ffffff;
+            margin: auto;
+            width: 900px;
+            border-left: solid black 3px;
+            border-right: solid black 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Content" >
+        <div class="header" >
+            <h1>
+                <b class="title">Romance Books</b> <br/>
+                <i class="subtitle">The best books and reviews</i>
+            </h1>
+        </div>
+        <div class="nav">
+            <div class="nav1" >
+                <a href="Mystery.html">Mystery</a>
+            </div>
+            <div class="nav2" >
+                <a href="Fantasy.html">Fantasy</a>
+            </div>
+            <div class="nav3" >
+                <a href="Science%20Fiction.html">Science Fiction</a>
+            </div>
+        </div>
+        <div class="Image1" >
+            <br/>
+            <img src="Images/girl-he-used-to-know.jpg"
+                 alt="Book cover of The Girl he used to know"
+                 height="400" >
+        </div>
+        <div class="Image2" >
+            <br/>
+            <img src="Images/it-ends-with-us-colleen-hoover.jpg"
+                 alt="Book cover of It ends with us"
+                 height="400">
+        </div>
+        <div class="Image3" >
+            <img src="Images/every-breath.jpg"
+                 alt="Book cover of Every Breath"
+                 height="400" >
+        </div>
+        <div class="Image4" >
+            <img src="Images/after.jpg"
+                 alt="Book cover of After"
+                 height="400" >
+        </div>
+        <div class="Review1" >
+            <p class="review">
+                Annika Rose likes being alone. <br/>
+                She feels lost in social situations, saying the wrong thing or acting the wrong way. <br/>
+                She just can't read people. She prefers the quiet solitude of books or playing chess to being around others. <br/>
+                Apart from Jonathan. She liked being around him, but she hasn't seen him for ten years. <br/>
+                Until now that is. And she's not sure he'll want to see her again after what happened all those years ago.<br/>
+
+                Annika Rose likes being alone. <br/>
+                Except that, actually, she doesn't like being alone at all.<br/>
+                <br/>
+                <b><i>The Girl He Used to Know</i> is an uplifting novel full of surprising revelations that keep you turning the page. <br/>
+                Perfect for fans of Jojo Moyes, Gail Honeyman, Jill Santopolo and <i>Sliding Doors.</i></b><br/>
+                <br/>
+                <a class="red" href="https://www.amazon.ca/Girl-He-Used-Know/dp/1250200350/ref=sr_1_1?crid=2FLLKHLZML9PY&keywords=the+girl+he+used+to+know&qid=1580916201&sprefix=the+girl+he+%2Caps%2C162&sr=8-1" > Buy now on Amazon </a>
+            </p>
+        </div>
+        <div class="Review2" >
+            <p class="review">
+                At first glance, the couple is edgy but cute: Lily Bloom runs a flower shop for people who hate flowers; Ryle Kincaid is a surgeon who says he never wants to get married or have kids. They meet on a rooftop in Boston on the night Ryle loses a patient and Lily attends her abusive father’s funeral.
+                The provocative opening takes a dark turn when Lily receives a warning about Ryle’s intentions from his sister, who becomes Lily’s employee and close friend.
+                Lily swears she’ll never end up in another abusive home, but when Ryle starts to show all the same warning signs that her mother ignored, Lily learns just how hard it is to say goodbye.
+                When Ryle is not in the throes of a jealous rage, his redeeming qualities return, and Lily can justify his behavior: “I think we needed what happened on the stairwell to happen so that I would know his past and we’d be able to work on it together,” she tells herself.  <br/>
+                Lily marries Ryle hoping the good will outweigh the bad, and the mother-daughter dynamics evolve beautifully as Lily reflects on her childhood with fresh eyes.
+                Diary entries fancifully addressed to TV host Ellen DeGeneres serve as flashbacks to Lily’s teenage years, when she met her first love, Atlas Corrigan, a homeless boy she found squatting in a neighbor’s house.
+                When Atlas turns up in Boston, now a successful chef, he begs Lily to leave Ryle. Despite the better option right in front of her, an unexpected complication forces Lily to cut ties with Atlas, confront Ryle, and try to end the cycle of abuse before it’s too late.  <br/>
+                The relationships are portrayed with compassion and honesty, and the author’s note at the end that explains Hoover’s personal connection to the subject matter is a must-read.
+                <br/>
+                <b>Packed with riveting drama and painful truths, this book powerfully illustrates the devastation of abuse—and the strength of the survivors.</b> <br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Ends-Us-Colleen-Hoover/dp/1471156265/ref=sr_1_1?crid=3PC9TDB8T582C&keywords=it+ends+with+us+colleen+hoover&qid=1580916447&sprefix=it+ends+with+us+%2Caps%2C182&sr=8-1" >Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review3" >
+            <p class="review">
+                Hope Anderson is at a crossroads. <br/>
+                At thirty-six, she's been dating her boyfriend, an orthopedic surgeon, for six years. <br/>
+                With no wedding plans in sight, and her father recently diagnosed with ALS, she decides to use a week at her family's cottage in Sunset Beach,<br/>
+                North Carolina, to ready the house for sale and mull over some difficult decisions about her future.<br/>
+
+                Tru Walls has never visited North Carolina but is summoned to Sunset Beach by a letter from a man claiming to be his father. <br/>
+                A safari guide, born and raised in Zimbabwe, Tru hopes to unravel some of the mysteries surrounding his mother's early life and recapture memories lost with her death. <br/>
+                When the two strangers cross paths, their connection is as electric as it is unfathomable . . . but in the immersive days that follow, their feelings for each other will give way to choices that pit family duty against personal happiness in devastating ways.<br/>
+                <br/>
+                <b>Illuminating life's heartbreaking regrets and enduring hope, <br/>
+                    Every Breath explores the many facets of love that lay claim to our deepest loyalties -- and asks the question, How long can a dream survive?</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/Every-Breath-Nicholas-Sparks/dp/1538728524/ref=sr_1_1?crid=2IPKGHH721O2C&keywords=every+breath+nicholas+sparks&qid=1580916494&sprefix=every+breath%2Caps%2C166&sr=8-1" >Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="Review4" >
+            <p class="review">
+                Tessa is a good girl with a sweet, reliable boyfriend back home. She’s got direction, ambition, and a mother who’s intent on keeping her that way.<br/>
+
+                But she’s barely moved into her freshman dorm when she runs into Hardin. With his tousled brown hair, cocky British accent, tattoos, and lip ring, Hardin is cute and different from what she’s used to.<br/>
+
+                But he’s also rude—to the point of cruelty, even. For all his attitude, Tessa should hate Hardin. And she does—until she finds herself alone with him in his room. Something about his dark mood grabs her, and when they kiss it ignites within her a passion she’s never known before.<br/>
+
+                He’ll call her beautiful, then insist he isn't the one for her and disappear again and again. Despite the reckless way he treats her, Tessa is compelled to dig deeper and find the real Hardin beneath all his lies. He pushes her away again and again, yet every time she pushes back, he only pulls her in deeper.<br/>
+
+                Tessa already has the perfect boyfriend. So why is she trying so hard to overcome her own hurt pride and Hardin’s prejudice about nice girls like her?<br/>
+
+                Unless…could this be love?<br/>
+                <br/>
+                <b>Now newly revised and expanded, Anna Todd’s After fanfiction racked up 1 billion reads online and captivated readers across the globe. Experience the Internet’s most talked-about book for yourself!<br/>
+
+                    There was the time before Tessa met Hardin, and then there’s everything AFTER ... Life will never be the same.</b><br/>
+                <br/>
+                <a a class="red" href="https://www.amazon.ca/After-Anna-Todd/dp/1476792488/ref=sr_1_1?crid=1IZKUOHZBVJS2&keywords=after+book&qid=1580916350&sprefix=after+b%2Caps%2C171&sr=8-1" > Buy now on Amazon</a>
+            </p>
+        </div>
+        <div class="footer1" >
+            <p>
+                <a href="index.html"> Back to Main page </a>
+            </p>
+        </div>
+        <div class="footer2" >
+
+        </div>
+        <div class="footer3" >
+            <p>
+                <a href="aboutproject.html"> About my project </a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

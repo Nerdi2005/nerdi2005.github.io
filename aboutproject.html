@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About my project</title>
+    <meta name="author" content="Leia Johst" >
+    <meta name="description" content="Book review website, About my Project" >
+    <link rel="shortcut icon" href="Images/Paper.jpg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        body {
+            text-align: center;
+            background-image: url("Images/Writing3.png");
+            font-family: 'Architects Daughter', cursive;
+        }
+        .header {
+            grid-area: header;
+            padding: 5px;
+            text-align: center;
+            background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,145,0,1) 20%, rgba(232,255,0,1) 40%, rgba(0,255,4,1) 55%, rgba(0,251,255,1) 70%, rgba(25,0,255,1) 85%, rgba(166,0,255,1) 100%);
+            /*https://cssgradient.io/ */
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            width: 890px;
+            margin: auto;
+        }
+        b.title {
+            font-size: 55px;
+        }
+        i.title {
+            font-size: xx-large;
+        }
+        .problem {
+            grid-area: problem;
+            margin-top: 5px;
+            text-align: left;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        .planning1 {
+            grid-area: planning1;
+            text-align: left;
+            margin-left: 15px;
+            width: 350px;
+        }
+        .planning2 {
+            grid-area: planning2;
+            text-align: left;
+            margin-left: 15px;
+            width: 350px;
+        }
+        .Intro {
+            grid-area: intro;
+            text-align: left;
+            margin-left: 15px;
+            margin-top: 20px;
+            margin-right: 15px;
+        }
+        .webdesign {
+            grid-area: webdesign;
+            margin-top: 5px;
+            text-align: left;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+        .footer {
+            grid-area: footer;
+            padding-bottom: 20px;
+            font-size: large;
+            text-align: center;
+            border-bottom: 3px solid black;
+            border-top: 3px solid black;
+            background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,145,0,1) 20%, rgba(232,255,0,1) 40%, rgba(0,255,4,1) 55%, rgba(0,251,255,1) 70%, rgba(25,0,255,1) 85%, rgba(166,0,255,1) 100%);
+            display: grid;
+            grid-template-columns: 1Fr 1Fr 1Fr 1Fr 1Fr;
+            grid-template-rows: 50px;
+            grid-template-areas: "Romance Mystery Main Fantasy SciFi"
+        }
+        .Romance {
+            grid-area: Romance;
+            text-align: center;
+        }
+        .Mystery {
+            grid-area: Mystery;
+            text-align: center;
+        }
+        .Main {
+            grid-area: Main;
+            text-align: center;
+        }
+        .Fantasy {
+            grid-area: Fantasy;
+            text-align: center;
+        }
+        .SciFi {
+            grid-area: SciFi;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        a.red:hover {
+            color: red;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 2.5Fr 3Fr;
+            grid-template-rows: 150px 1Fr 3Fr 2Fr 1Fr 50px;
+            grid-template-areas: "header header"
+                                 "intro intro"
+                                 "planning1 planning2"
+                                 "problem webdesign"
+                                 "problem webdesign"
+                                 "footer footer";
+            background: #ffffff;
+            margin: auto;
+            width: 900px;
+            border-left: solid black 3px;
+            border-right: solid black 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>
+                <b class="title">About my project</b> <br/>
+                <i class="title">Planning, problems and understanding of web-design</i> <br/>
+            </h1>
+        </div>
+        <div class="Intro">
+            <p>
+                <b><u>About my project:</u></b> <br/>
+                My project is to create a website using HTML and CSS for my Computer science class, made up of at least 5 webpages to demonstrate my understanding of coding while creating something of personal interest to me. <br/>
+                We were provided with several categories from which I selected "Product Review". <br/>
+                I decided to create a website with book reviews, because I always loved to read and I personally think that it's helpful to get an opinion on a book while deciding whether it's worth reading. <br/>
+            </p>
+        </div>
+        <div class="problem">
+            <p>
+                <b><u>Problems and solutions:</u></b> <br/>
+                A good way to solve issues with HTML code is to first look for red error signs on the right of the code in <b>WebStorm</b>, those can be very helpful. If the code doesn't work, but has no error sign, it's very helpful to find a tutorial online for the piece of code that's problematic, for example on <b>w3schools</b>. W3schools is also a great tool to find the code for something you want to do with HTML, but don't know how to. <br/>
+                In my code I had a lot of Typos. Using WebStorm, those are relatively easy to find, because the program detects Typos for you. One of my most frequent problems was, that I wanted my website to do something, but I didn't know how to code it that way. I solved this issue, by searching a tutorial for the code I was looking for on w3schools. <br/>
+                I also had some problems setting up a CSS grid for my website. I used a <b>YouTube tutorial on CSS grid</b> to figure out what I was doing wrong. I also used the code from an <b>example website</b> created by my computer science teacher. <br/>
+                <br/>
+                <b><u>Sources:</u></b> <br/>
+                <a class="red" href="FinalWebsite2020/index.html" >Teacher example website</a> <br/>
+                <a class="red" href="https://www.w3schools.com/" >w3schools</a> <br/>
+                <a class="red" href="https://www.youtube.com/watch?v=uQYq3J8PhEs&feature=youtu.be" >YouTube tutorial on CSS grid</a> <br/>
+                <br/>
+            </p>
+        </div>
+        <div class="planning1">
+            <p>
+                <b><u>My Main page layout:</u></b>
+                <img src="Images/Webpage%20Main%20Page.PNG"
+                     alt="Main page layout"
+                     width="350" > <br/>
+                <br/>
+                <b><u>Layout:</u></b> <br/>
+                For the planning of my website I looked at other book review websites on the internet to find an interesting layout and I combined the best elements. <br/>
+                I tried to make my layout for my main page and my content pages very organized and as similar as possible. <br/>
+                <br/>
+                <b><u>Time management:</u></b> <br/>
+                I didn't really manage my time for my project,<br/>
+                I just tried to use class time efficiently and then worked on it on the weekend or in the afternoon whenever I liked to. <br/>
+            </p>
+        </div>
+        <div class="planning2">
+            <p> <b><u>My Content page layout:</u></b>
+                <img src="Images/Webpage%20Content%20page.PNG"
+                     alt="Content page layout"
+                     width="350" > <br/>
+                <br/>
+                <b><u>Color schemes:</u></b> <br/>
+                For the color schemes I used on the different content pages I searched for a background pattern that fits the theme of the content page and created a color scheme using the colors in the background pattern. <br/>
+                On the main page and the about my project page I searched for a simple but fitting background that is not so colorful and used a very colorful color scheme to create some contrast. <br/>
+            </p>
+        </div>
+        <div class="webdesign">
+            <p>
+                <b><u>Understanding of web-design:</u></b> <br/>
+                I really like about my website, that it has a consistent layout, but different color schemes depending on the topic, that makes it more colorful. I also like that it has books from different genres, so there is something to read for everyone.
+                I like that I included color gradients and hover animations to make the design more interesting. <br/>
+                I think people would want to visit my website, because it gives an organized overview about good books and helps them understand why they might want to read them. <br/>
+                <br/>
+                I am not completely sure what level I would give myself for the website. I think I should have used a more consistent color scheme, because sometimes very colorful color schemes can distract from the actual content. <br/>
+                Maybe I should have used a simpler and more readable font for my text, because it might be hard to read for some people. <br/>
+                Considering the amount of things that I maybe should have done differently, I would probably grade myself with a level 3.
+            </p>
+        </div>
+        <div class="footer">
+            <div class="Romance">
+                <a href="Romance.html">Romance</a>
+            </div>
+            <div class="Mystery">
+                <a href="Mystery.html">Mystery</a>
+            </div>
+            <div class="Main">
+
+                <a href="index.html"> Back to main page</a>
+
+            </div>
+            <div class="Fantasy">
+                <a href="Fantasy.html">Fantasy</a>
+            </div>
+            <div class="SciFi">
+                <a href="Science%20Fiction.html">Science Fiction</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
